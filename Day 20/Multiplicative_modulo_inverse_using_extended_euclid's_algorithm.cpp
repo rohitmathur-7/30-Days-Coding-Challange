@@ -1,3 +1,6 @@
+// 30daychallenge - Day 20
+// Finding Multiplicative modulo inverse using extended euclid's algorithm.
+
 #include<bits/stdc++.h>
 using namespace std;
 int x,y,GCD;
@@ -7,7 +10,7 @@ int gcd(int a,int b){
 }
 
 void extendedEuclid(int a,int b){
-    if(b==0){
+    if(b==0){ 
         x=1;
         y=0;
         GCD=a;
