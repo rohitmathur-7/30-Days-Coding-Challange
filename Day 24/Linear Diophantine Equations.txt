@@ -1,0 +1,53 @@
+Linear Diophantine Equations - 
+
+A diophantine equation is a polynomial equation, usually in 2 or more 
+unknowns, such that only the integral solutions are required.
+
+An integral solution is a solution such that all the unknown variables
+take only integer values.
+
+Question: 
+---------
+Given 3 integers a,b,c representing a linear equation of the form
+ax+by=c. Determine if the equation has a solution such that x and y
+are both integral values.
+
+Solution:
+---------
+ax+by=c
+(a,b,c -> constant, x,y-> variables)
+
+we have to check if integral solution is possible or not.
+
+ Suppose,
+  GCD(a,b)=g;
+  a=gk1,b=gk2;
+
+  k1g(x) + k2g(y)= c
+  k1(x) + k2(y)= c/g
+
+  k1(x) + k2(y) this will be an integer.
+  Hence, c/g will also have to be an integer,
+  for that c%g should be equal to 0.(c%g==0)
+
+  Let's say x0 and y0 is a possible solution.
+  Then, ax0 + by0 = c (True)
+
+  Genereal Solution{x,y} = {x0+(b*t)/g , y0-(a*t)/g}
+
+  Substituting value of x and y in ax+by=c :- 
+
+  = a(x0+(b*t)/g) + b(y0-(a*t)/g)
+  = ax0 + by0
+
+ Now as ax0 + by0 = c
+	
+ - We can keep any value of t in the equation, And that's why this has Infinitely Many Solutions.
+
+ - Linear Diophantine Equations are solved using Extended Eucledian Algorithm
+  
+
+
+
+
+
