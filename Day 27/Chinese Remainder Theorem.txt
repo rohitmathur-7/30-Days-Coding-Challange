@@ -1,0 +1,27 @@
+﻿Chinese Remainder Theorem -
+
+- It is used to solve system of linear congurences.
+
+  Let's say-
+  x%2=1
+  
+- This can be written in another form like -
+    x≡1(mod 2) --> Linear Congurence
+    i.e when x%2, it leaves remainder as 1.
+
+  ex- Find a number x, Given :-
+      x%2=1, x%3=2, x%7=5
+
+  We'll use CRT to find x.
+
+  Formula for CRT -
+  x=(Σ PP[i] * inverse[i] * rem[i])%Product   [i=0 to k-1]
+
+  PP[i]= Product of all numbers except that number.
+  PP[i]= (Product of all numbers)/num[i]
+
+  rem[i]= arrayof remainders
+
+  inverse[i]= modular multiplicative inverse of PP[i] with respect to num[i]
+
+  Product= Product of all numbers
