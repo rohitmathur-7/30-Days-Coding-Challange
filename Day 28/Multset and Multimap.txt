@@ -1,0 +1,9 @@
+Multiset - can have similar values
+multiset <data_type> Multiset_name;
+
+Multimap - can have same keys.
+multimap <data_type1, data_type2> Multimap_name
+
+The default behavior of both of these data structures multiset and multimap is to store elements in ascending order. When a pair of multiset is created then by default, it will sort all the pairs in increasing order according to the first element of all the pairs and if the first element of any two or more than two pairs are equal then it will sort the pair according to the second element of the pair.
+
+When a pair of multimap  is created then by default, it will sort all the pairs in increasing order according to the first element of all the pairs and if the first element of any two or more than two pair are equal then it will print the pair according to the order of insertion to the pair of multimap.
