@@ -1,0 +1,8 @@
+﻿Fermet's Little Theorem(FLT)-
+----------------------------
+
+If p is a prime number, then for any integer a -
+
+(a^p)%p=a
+
+(a^p) ≡ a(mod p)
